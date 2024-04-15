@@ -1,0 +1,68 @@
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: var(--primary);
+    width: 100%;
+    text-align: center;
+    min-height: 80svh;
+}
+
+.buttonLink {
+    text-decoration: none;
+}
+
+/* .container h1 {
+    color: var(--tertiary);
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
+} */
+
+.login {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1rem;
+    gap: 0.5rem;
+    background-color: var(--tertiary);
+    color: var(--tertiary);
+    /* height: 100%; */
+}
+
+.loginImage {
+    display: grid;
+    grid-template-rows: auto 40%;
+    width: 100%;
+    place-items: center;
+    /* gap: 1rem; */
+}
+
+.loginButtons {
+    padding: 1rem;
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+}
+
+.loginButtons svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.imageContainer {
+    place-self: center;
+}
+
+@media (max-width: 500px) {
+    .login {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        padding: 0.5rem 0.5rem 2rem 0.5rem;
+    }
+    .image {
+        display: none;
+    }
+
+    .loginImage {
+        gap: 2rem;
+    }
+}

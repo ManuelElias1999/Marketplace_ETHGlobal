@@ -1,0 +1,72 @@
+.footer {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: var(--primary);
+    gap: 1rem;
+    padding: 2rem 0 0 0;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    place-items: center;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    color: var(--tertiary);
+    place-items: center;
+}
+
+.text {
+    display: grid;
+    place-items: center;
+    color: var(--tertiary);
+    padding: 2rem;
+}
+
+.left {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    place-items: center;
+    gap: 1rem;
+}
+
+.right {
+    display: grid;
+    padding: 1rem;
+}
+
+.right ul li::before {
+    content: "\2022 \2022 \2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--secondary); /* Change the color */
+    padding: 0.5rem;
+}
+
+.right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    list-style: none;
+}
+
+.right a:hover {
+    color: var(--secondary);
+}
+
+.right a {
+    color: var(--tertiary);
+    text-decoration: none;
+}
+
+@media (max-width: 375px) {
+    .mainContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
+    }
+}

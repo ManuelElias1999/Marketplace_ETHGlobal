@@ -1,0 +1,40 @@
+{
+  "name": "claymore",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "optimism-goerli-hardhat": "npx hardhat run src/ethereum-hardhat/scripts/marketplace-script.js --network optimism_goerli",
+    "mumbai-hardhat": "npx hardhat run src/ethereum-hardhat/scripts/marketplace-script.js --network mumbai"
+  },
+  "dependencies": {
+    "@polybase/client": "^0.3.38",
+    "@polybase/react": "^0.3.38",
+    "@types/node": "18.15.3",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "framer-motion": "^10.9.1",
+    "iconoir-react": "^6.4.0",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.8",
+    "react-useanimations": "^2.10.0",
+    "truffle-hdwallet-provider": "1.0.17",
+    "typescript": "5.0.2",
+    "uuid": "^9.0.0",
+    "web3": "1.9.0",
+    "web3-utils": "1.9.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "2.0.6",
+    "@nomiclabs/hardhat-waffle": "2.0.3",
+    "ethereum-waffle": "3.4.4",
+    "hardhat": "2.9.9"
+  }
+}

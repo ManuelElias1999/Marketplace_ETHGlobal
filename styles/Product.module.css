@@ -1,0 +1,33 @@
+.product_container {
+    padding: 2em 10em;
+    display: grid;
+    gap: 2em;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    background-color: var(--tertiary);
+}
+
+.title_header_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0 2rem 0;
+    gap: 1em;
+    background-color: var(--primary);
+    color: var(--tertiary);
+}
+.title_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--tertiary);
+    gap: 1em;
+}
+
+.red_line {
+    height: 0.2em;
+    width: 5em;
+    background-color: var(--secondary);
+    margin: 0 auto;
+}

@@ -1,0 +1,19 @@
+.circle {
+    width: 1em;
+    height: 1em;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+  }
+  
+  .tittle {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .number {
+    margin-left: 2em;
+  }

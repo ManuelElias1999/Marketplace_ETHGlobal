@@ -1,0 +1,75 @@
+.inputForm {
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.inputForm input {
+    font-family: inherit;
+    border-radius: 0.2rem;
+    padding: 0.75em;
+    border: none;
+    /* outline:  */
+    /* outline-color: red; */
+}
+
+.inputForm input:focus {
+    outline-color: var(--primary-brilliant);
+    outline-width: 0.1rem;
+    outline-style: solid;
+}
+/* Chrome, Safari, Edge, Opera */
+.inputForm input::-webkit-outer-spin-button,
+.inputForm input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+/* .inputForm input[type="number"] {
+    -moz-appearance: textfield;
+} */
+
+.icon {
+    display: flex;
+    width: 100%;
+    border-radius: 0.3em;
+}
+
+.icon input {
+    width: 100%;
+    border-radius: 0.3em 0 0 0.3em;
+}
+
+.icon input[type="password"]::-ms-reveal,
+.icon input[type="password"]::-ms-clear {
+    display: none;
+}
+
+.icon button {
+    border-radius: 0 0.3em 0.3em 0;
+    background-color: white;
+    border: none;
+    padding: 0 1em;
+    display: grid;
+    place-items: center;
+    outline: none;
+}
+
+.icon div {
+    background-color: wheat;
+}
+
+.icon:focus-within {
+    outline-style: solid;
+    outline-width: 0.1em;
+    outline-color: var(--primary-brilliant);
+}
+
+.error {
+    color: var(--red-light);
+    font-size: 0.75rem;
+    font-weight: 700;
+    /* text-shadow: 0px 0.4px rgb(200, 195, 195); */
+}
